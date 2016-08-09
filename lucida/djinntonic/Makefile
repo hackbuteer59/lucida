@@ -10,7 +10,7 @@ all:
 	python -mthrift_compiler.main --gen cpp2 ../lucidaservice.thrift; \
 	python -mthrift_compiler.main --gen cpp2 ../lucidatypes.thrift; \
 	cd models; \
-	cp $(HOME)\Downloads\${fname} .; \
+	cp $(HOME)/Downloads/${fname} .; \
 	tar xvzf ${fname}; \
 	rm -rf ${fname}; \
 	cd ../imc; \
