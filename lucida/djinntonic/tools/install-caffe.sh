@@ -10,9 +10,9 @@ if [ -d caffe ]; then
   exit
 fi
 
-git clone https://github.com/jhauswald/caffe.git \
+
+  git clone -b ipa https://github.com/hackbuteer59/caffe.git \
   && cd caffe \
-  && git checkout ipa \
   && cp Makefile.config.example Makefile.config \
-  && make -j$THREADS \
+  && make -j $THREADS \
   && make distribute
